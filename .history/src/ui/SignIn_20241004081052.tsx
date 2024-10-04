@@ -12,6 +12,7 @@ const SignIn: React.FC = () => {
         />
       </div>
 
+      {/* Right section with the sign-in form - occupies the other half */}
       <div className="w-1/2 h-full bg-black flex flex-col items-center justify-center">
         <div className="text-center">
           <h2 className="text-4xl text-white font-semibold">Sign In</h2>
