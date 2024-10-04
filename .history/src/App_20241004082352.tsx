@@ -9,6 +9,7 @@ const App = () => {
       <div className="min-h-screen bg-[#000]">
         <BrowserRouter>
           <Routes>
+            {/* Route for SignIn page */}
             <Route path="/" element={<SignIn />} />
 
             <Route path="/dashboard" element={<Dashboard />} />
