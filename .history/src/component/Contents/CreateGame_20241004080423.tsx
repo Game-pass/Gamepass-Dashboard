@@ -81,7 +81,7 @@ const CreateGame: React.FC = () => {
           <div className={`mt-16 w-full ${games.length > 7 ? 'max-h-96 overflow-y-auto' : ''}`}>
             <Table
               games={games} // Display all games
-              onEdit={() => { /* Handle edit */ }}
+              // onEdit={(game) => { /* Handle edit */ }}
               onDelete={handleDelete}
               onConnect={() => setIsSdkModalOpen(true)}
             />
