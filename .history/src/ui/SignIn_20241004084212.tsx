@@ -6,7 +6,7 @@ const SignIn: React.FC = () => {
   const navigate = useNavigate();
 
   const handleWalletSignIn = () => {
-    navigate("/dashboard");
+    navigate("/dashboard);
   };
 
   return (

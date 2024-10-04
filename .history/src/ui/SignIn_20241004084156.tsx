@@ -3,10 +3,10 @@ import Image from '../assets/img/login-pic.png';
 import { useNavigate } from "react-router-dom";
 
 const SignIn: React.FC = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate();  // Hook to programmatically navigate
 
   const handleWalletSignIn = () => {
-    navigate("/dashboard");
+    navigate("/login");
   };
 
   return (

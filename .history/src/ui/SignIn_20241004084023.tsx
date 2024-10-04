@@ -2,12 +2,12 @@ import React from 'react';
 import Image from '../assets/img/login-pic.png';
 import { useNavigate } from "react-router-dom";
 
-const SignIn: React.FC = () => {
-  const navigate = useNavigate();
 
-  const handleWalletSignIn = () => {
-    navigate("/dashboard");
-  };
+
+
+const SignIn: React.FC = () => {
+
+  
 
   return (
     <div className="flex h-screen p-4">
@@ -23,12 +23,11 @@ const SignIn: React.FC = () => {
         <div className="text-center">
           <h2 className="text-4xl text-white font-semibold">Sign In</h2>
 
-          <button
-            className="mt-6 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-28 py-3 rounded-full text-lg shadow-lg focus:outline-none ring-2 ring-blue-500 ring-opacity-50 hover:shadow-xl transition duration-300"
-            onClick={handleWalletSignIn}
-          >
+           {/* Wallet Button with glow effect */}
+           <button className="mt-6 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-28 py-3 rounded-full text-lg shadow-lg focus:outline-none ring-2 ring-blue-500 ring-opacity-50 hover:shadow-xl transition duration-300">
             Sign In with Wallet
           </button>
+          
         </div>
       </div>
     </div>

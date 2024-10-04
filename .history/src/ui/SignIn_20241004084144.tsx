@@ -3,10 +3,11 @@ import Image from '../assets/img/login-pic.png';
 import { useNavigate } from "react-router-dom";
 
 const SignIn: React.FC = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate();  // Hook to programmatically navigate
 
+  // Function to handle wallet sign-in click
   const handleWalletSignIn = () => {
-    navigate("/dashboard");
+    navigate("/login");  // Redirect to the login page (or replace with any other route)
   };
 
   return (
@@ -23,6 +24,7 @@ const SignIn: React.FC = () => {
         <div className="text-center">
           <h2 className="text-4xl text-white font-semibold">Sign In</h2>
 
+          {/* Wallet Button with glow effect */}
           <button
             className="mt-6 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-28 py-3 rounded-full text-lg shadow-lg focus:outline-none ring-2 ring-blue-500 ring-opacity-50 hover:shadow-xl transition duration-300"
             onClick={handleWalletSignIn}
